@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/mapDocuments/MapDocumentsWebPart.js",
+      "manifest": "./src/webparts/mapDocuments/MapDocumentsWebPart.manifest.json",
+      "outputPath": "./dist/map-documents.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "mapDocumentsStrings": "webparts/mapDocuments/loc/{locale}.js"
+  }
+}

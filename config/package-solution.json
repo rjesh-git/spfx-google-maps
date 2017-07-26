@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "spfx-google-maps-client-side-solution",
+    "id": "bf090004-ca9c-409d-8c2c-78ed7867a1d0",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-google-maps.sppkg"
+  }
+}
