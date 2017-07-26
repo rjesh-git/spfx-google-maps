@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## spfx-google-maps
 
 This is where you include your WebPart documentation.
@@ -24,3 +25,6 @@ gulp test - TODO
 gulp serve - TODO
 gulp bundle - TODO
 gulp package-solution - TODO
+=======
+# spfx-google-maps
+>>>>>>> cc05e4b4cc281392314c8eb1fda9f1d59f584696
