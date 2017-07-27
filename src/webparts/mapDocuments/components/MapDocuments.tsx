@@ -11,6 +11,7 @@ export default class MapDocuments extends React.Component<IMapDocumentsProps, vo
         <div className={styles.container}>
           <span className={styles.label}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
         </div>
+        <div id="map_canvas" className="mapping"></div>
       </div>
     );
   }
