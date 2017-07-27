@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-## spfx-google-maps
+# spfx-google-maps
 
 This is where you include your WebPart documentation.
 
-### Building the code
+## Building the code
 
 ```bash
 git clone the repo
@@ -18,13 +17,13 @@ This package produces the following:
 * dist/* - the bundled script, along with other resources
 * deploy/* - all resources which should be uploaded to a CDN.
 
-### Build options
+## Build options
 
 gulp clean - TODO
 gulp test - TODO
 gulp serve - TODO
 gulp bundle - TODO
 gulp package-solution - TODO
-=======
-# spfx-google-maps
->>>>>>> cc05e4b4cc281392314c8eb1fda9f1d59f584696
+
+
+

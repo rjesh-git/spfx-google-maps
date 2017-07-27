@@ -9,7 +9,6 @@
     "@microsoft/sp-core-library": "~1.1.0",
     "@microsoft/sp-webpart-base": "~1.1.1",
     "@types/webpack-env": ">=1.12.1 <1.14.0",
-    "google-map-react": "^0.24.0",
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "@types/react": "0.14.46",
