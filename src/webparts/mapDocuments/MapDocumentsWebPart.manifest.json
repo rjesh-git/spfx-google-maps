@@ -20,10 +20,7 @@
     "description": { "default": "Map-Documents description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "Property map",
-      "test": "Multi-line text field",
-      "test1": true,
-      "test2": "2"
+      "list":""
     }
   }]
 }

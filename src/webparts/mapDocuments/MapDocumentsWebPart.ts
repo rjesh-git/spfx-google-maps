@@ -58,8 +58,7 @@ export default class MapDocumentsWebPart extends BaseClientSideWebPart<IMapDocum
                   loadOptions: this.loadLists.bind(this),
                   onPropertyChange: this.onListChange.bind(this),
                   selectedKey: this.properties.list
-                }),
-                this.itemsDropDown
+                })
               ]
             }
           ]
