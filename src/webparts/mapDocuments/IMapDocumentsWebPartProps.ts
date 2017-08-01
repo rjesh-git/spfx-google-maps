@@ -1,3 +1,3 @@
 export interface IMapDocumentsWebPartProps {
-  description: string;
+  list: string;
 }
