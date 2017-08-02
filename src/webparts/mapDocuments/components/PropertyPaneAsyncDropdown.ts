@@ -7,7 +7,7 @@ import {
 import { IDropdownOption } from 'office-ui-fabric-react';
 import { IPropertyPaneAsyncDropdownProps } from './IPropertyPaneAsyncDropdownProps';
 import { IPropertyPaneAsyncDropdownInternalProps } from './IPropertyPaneAsyncDropdownInternalProps';
-import AsyncDropdown from './/AsyncDropdown';
+import AsyncDropdown from './AsyncDropdown';
 import { IAsyncDropdownProps } from './IAsyncDropdownProps';
 
 export class PropertyPaneAsyncDropdown implements IPropertyPaneField<IPropertyPaneAsyncDropdownProps> {

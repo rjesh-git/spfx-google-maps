@@ -7,7 +7,8 @@ import {
   PropertyPaneTextField,
   PropertyPaneCheckbox,
   PropertyPaneDropdown,
-  PropertyPaneToggle
+  PropertyPaneToggle,
+  PropertyPaneSlider
 } from '@microsoft/sp-webpart-base';
 
 import { IDropdownOption } from 'office-ui-fabric-react';
@@ -17,7 +18,6 @@ import {
   EnvironmentType
 } from '@microsoft/sp-core-library';
 
-import { SPComponentLoader, ILoadScriptOptions } from '@microsoft/sp-loader';
 import * as strings from 'mapDocumentsStrings';
 import MapDocuments from './components/MapDocuments';
 import { IMapDocumentsProps } from './components/IMapDocumentsProps';
@@ -27,8 +27,6 @@ import { IList, IListItem, ListService, MockListService } from './services';
 import { PropertyPaneAsyncDropdown } from './components/PropertyPaneAsyncDropdown';
 
 export default class MapDocumentsWebPart extends BaseClientSideWebPart<IMapDocumentsWebPartProps> {
-  private itemsDropDown: PropertyPaneAsyncDropdown;
-
   public render(): void {
     const element: React.ReactElement<IMapDocumentsProps > = React.createElement(
       MapDocuments
@@ -58,6 +56,21 @@ export default class MapDocumentsWebPart extends BaseClientSideWebPart<IMapDocum
                   loadOptions: this.loadLists.bind(this),
                   onPropertyChange: this.onListChange.bind(this),
                   selectedKey: this.properties.list
+                }),
+                PropertyPaneSlider ('', {
+                  label: strings.MapZoomLevelLabel,
+                  min: 1,
+                  max: 1000
+                })
+              ]
+            },
+            {
+              groupName: strings.TroubleShootingGroupName,
+              groupFields: [
+                PropertyPaneToggle('debugMode', {
+                  label: strings.DebugLabel,
+                  onText: strings.DebugOnText,
+                  offText: strings.DebugOffText
                 })
               ]
             }
@@ -112,6 +125,9 @@ export default class MapDocumentsWebPart extends BaseClientSideWebPart<IMapDocum
 
   private onListChange(propertyPath: string, oldValue: any, newValue: any): void {
     // TODO: Add the list change logic here
+    if (this.properties.debugMode) {
+      console.log(`PropertyPath: ${propertyPath} oldValue: ${oldValue} newValue: ${newValue}`);
+    }
   }
 
 }
