@@ -29,7 +29,9 @@ import { PropertyPaneAsyncDropdown } from './components/PropertyPaneAsyncDropdow
 export default class MapDocumentsWebPart extends BaseClientSideWebPart<IMapDocumentsWebPartProps> {
   public render(): void {
     const element: React.ReactElement<IMapDocumentsProps > = React.createElement(
-      MapDocuments
+      MapDocuments, {
+        zoomLevel: this.properties.mapZoomLevel
+      }
     );
 
     ReactDom.render(element, this.domElement);
@@ -57,10 +59,10 @@ export default class MapDocumentsWebPart extends BaseClientSideWebPart<IMapDocum
                   onPropertyChange: this.onListChange.bind(this),
                   selectedKey: this.properties.list
                 }),
-                PropertyPaneSlider ('', {
+                PropertyPaneSlider ('mapZoomLevel', {
                   label: strings.MapZoomLevelLabel,
                   min: 1,
-                  max: 1000
+                  max: 21
                 })
               ]
             },

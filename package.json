@@ -14,7 +14,8 @@
     "@types/react-addons-update": "0.14.14",
     "@types/react-dom": "0.14.18",
     "@types/webpack-env": ">=1.12.1 <1.14.0",
-    "google-map-react": "^0.24.0",
+    "google-maps-react": "^1.1.0",
+    "prop-types": "^15.5.10",
     "react": "15.4.2",
     "react-dom": "15.4.2"
   },
