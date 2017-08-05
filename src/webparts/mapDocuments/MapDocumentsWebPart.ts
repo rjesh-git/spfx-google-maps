@@ -19,8 +19,8 @@ import {
 } from '@microsoft/sp-core-library';
 
 import * as strings from 'mapDocumentsStrings';
-import MapDocuments from './components/MapDocuments';
-import { IMapDocumentsProps } from './components/IMapDocumentsProps';
+import GoogleMaps from './components/GoogleMap';
+import { IGoogleMapProps } from './components/IGoogleMapProps';
 import { IMapDocumentsWebPartProps } from './IMapDocumentsWebPartProps';
 
 import { IList, IListItem, ListService, MockListService } from './services';
@@ -28,8 +28,8 @@ import { PropertyPaneAsyncDropdown } from './components/PropertyPaneAsyncDropdow
 
 export default class MapDocumentsWebPart extends BaseClientSideWebPart<IMapDocumentsWebPartProps> {
   public render(): void {
-    const element: React.ReactElement<IMapDocumentsProps > = React.createElement(
-      MapDocuments, {
+    const element: React.ReactElement<any> = React.createElement(
+      GoogleMaps, {
         zoomLevel: this.properties.mapZoomLevel
       }
     );

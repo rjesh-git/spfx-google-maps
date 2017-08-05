@@ -36,6 +36,6 @@ export class GoogleMap extends React.Component<IGoogleMapProps, any> {
 
 export default GoogleApiWrapper({
   apiKey: "AIzaSyDeYnX9jev7RqoRTnM43vWfDblMIxBWa1g"
-})(GoogleMap)
+})(GoogleMap);
 
 
